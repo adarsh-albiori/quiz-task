@@ -10,7 +10,7 @@
           Home
         </span>
         <span
-          v-if="isAdmin"
+          v-if="isAdmin === true"
           style="cursor: pointer"
           @click="users"
           class="ml-16"
