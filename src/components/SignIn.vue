@@ -45,13 +45,14 @@
       </v-btn>
 
       <v-card-text class="text-center">
-        <a
+        <v-btn
           class="text-blue text-decoration-none"
-          href="/signup"
+          to="/signup"
+          variant="flat"
           rel="noopener noreferrer"
         >
           Sign up now <v-icon icon="mdi-chevron-right"></v-icon>
-        </a>
+        </v-btn>
       </v-card-text>
     </v-card>
   </div>
