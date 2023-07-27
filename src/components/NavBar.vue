@@ -45,7 +45,7 @@ const store = quizStore();
 const isAdmin = ref("");
 
 onBeforeMount(() => {
-  isAdmin.value = JSON.parse(localStorage.getItem("isAdmin"));
+  isAdmin.value = JSON.parse(localStorage.getItem("isAdmin")) || [];
 });
 
 function signOut() {

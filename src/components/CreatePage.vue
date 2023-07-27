@@ -193,7 +193,7 @@ const removeOption = (questionIndex, optionIndex) => {
 
 function save() {
   qData.value = JSON.parse(localStorage.getItem("quiz-data")) || [];
-  quizInfo.createdBy = JSON.parse(localStorage.getItem("loggedInUser"));
+  quizInfo.createdBy = JSON.parse(localStorage.getItem("loggedInUser")) || [];
   qData.value.push(quizInfo);
   localStorage.setItem("quiz-data", JSON.stringify(qData.value));
   quizInfo.quizTitle = "";

@@ -69,7 +69,7 @@ function showUser(index) {
 }
 
 onBeforeMount(() => {
-  users.value = JSON.parse(localStorage.getItem("users"));
-  loggedInUser.value = JSON.parse(localStorage.getItem("loggedInUser"));
+  users.value = JSON.parse(localStorage.getItem("users")) || [];
+  loggedInUser.value = JSON.parse(localStorage.getItem("loggedInUser")) || [];
 });
 </script>

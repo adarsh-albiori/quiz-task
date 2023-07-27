@@ -165,7 +165,7 @@ const quizData = ref("");
 let quizInfo = reactive(null);
 
 onBeforeMount(() => {
-  qData.value = JSON.parse(localStorage.getItem("quiz-data"));
+  qData.value = JSON.parse(localStorage.getItem("quiz-data")) || [];
   quizInfo = qData.value;
   console.log(quizInfo[store.quizIndex].quizTitle);
 });

@@ -96,6 +96,6 @@ function showResults() {
   }
 }
 onMounted(() => {
-  quizData.value = JSON.parse(localStorage.getItem("quiz-data"));
+  quizData.value = JSON.parse(localStorage.getItem("quiz-data")) || [];
 });
 </script>

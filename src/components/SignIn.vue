@@ -67,7 +67,7 @@ const router = useRouter();
 const store = quizStore();
 
 function login() {
-  const userInfo = JSON.parse(localStorage.getItem("users"));
+  const userInfo = JSON.parse(localStorage.getItem("users")) || [];
   const matchedUsers = userInfo.filter(
     (user) => user.email === email.value && user.password === password.value
   );

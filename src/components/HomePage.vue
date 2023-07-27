@@ -177,9 +177,9 @@ function userProfile(index) {
 }
 
 onMounted(() => {
-  uData.value = JSON.parse(localStorage.getItem("users"));
-  qData.value = JSON.parse(localStorage.getItem("quiz-data"));
-  isAdmin.value = JSON.parse(localStorage.getItem("isAdmin"));
-  loggedInUser.value = JSON.parse(localStorage.getItem("loggedInUser"));
+  uData.value = JSON.parse(localStorage.getItem("users")) || [];
+  qData.value = JSON.parse(localStorage.getItem("quiz-data")) || [];
+  isAdmin.value = JSON.parse(localStorage.getItem("isAdmin")) || [];
+  loggedInUser.value = JSON.parse(localStorage.getItem("loggedInUser")) || [];
 });
 </script>

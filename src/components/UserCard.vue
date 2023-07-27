@@ -57,6 +57,6 @@ function okay() {
   router.push("/home");
 }
 onMounted(() => {
-  userData.value = JSON.parse(localStorage.getItem("users"));
+  userData.value = JSON.parse(localStorage.getItem("users")) || [];
 });
 </script>

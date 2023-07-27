@@ -59,6 +59,6 @@ function okay() {
   router.push("/home");
 }
 onMounted(() => {
-  quizData.value = JSON.parse(localStorage.getItem("quiz-data"));
+  quizData.value = JSON.parse(localStorage.getItem("quiz-data")) || [];
 });
 </script>
